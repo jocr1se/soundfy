@@ -1,0 +1,35 @@
+@import "../../Scss/index.scss";
+
+.box-albums{
+    >h1{
+        border-bottom: 1px solid $border-grey-light;
+        margin-bottom: 50px;
+        padding-bottom: 10px;
+        font-size: 40px;
+    }
+    .albums{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+        margin: 0;
+        padding: 20px;
+        &__item{
+            height: 160px;
+            width: 140px;
+            margin-bottom: 30px;
+            .avatar{
+                height: 150px;
+                width: 150px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            h4{
+                margin-top: 10px;
+                text-align: center;
+                color: $font-grey
+            }
+        }
+    }
+    
+}

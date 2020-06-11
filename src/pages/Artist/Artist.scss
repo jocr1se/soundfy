@@ -1,0 +1,34 @@
+@import "../../Scss/index.scss";
+
+.artist{
+    position: absolute;
+    width: 80%;
+    margin: 0;
+
+    
+    &__content{
+        margin: 50px;
+        position: relative;
+        top: -40px;
+    }
+
+    .albums{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 0 50px;
+        &__item{
+            width: 160px;
+            .avatar{
+                height: 150px;
+                width: 150px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            h4{
+                text-align: center;
+                color: $font-grey;
+            }
+        }
+    }
+}

@@ -1,0 +1,85 @@
+@import "../../../Scss/index.scss";
+
+.login-form{
+    margin-top: 50px;
+    h1{
+        color: $font-light;
+        text-align: center;
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+    span{
+        color: $font-light;
+    }
+    .resend-email-verification{
+        margin-top: 30px;
+        text-align: center;
+        font-size: 16px;
+        p{
+            color: $font-light;
+            span{
+                color: $background-primary;
+                text-decoration: underline;
+                padding-left: 10px;
+                cursor: pointer;
+                font-weight: bold;
+            }
+        }
+    }
+    .ui.form{
+        .field{
+            .input{
+                margin-bottom: 5px;
+                input{
+                    background-color: $background-grey;
+                    color: $font-light;
+                    font-size: 16px;
+                    border: 0;
+
+                    &:hover,
+                    &:active,
+                    &:focus{
+                        background-color: $background-grey-hover;
+                        border:0;
+                    }
+                }
+                i{
+                    color: $font-light;
+                    font-size: 19px;
+                }
+            }
+        }
+        button{
+            width: 100%;
+            background-color: $primary-color;
+            color:$font-light;
+            text-transform: uppercase;
+            border-radius: 50px;
+            letter-spacing: 3px;
+            margin-top: 10px;
+            padding: 17px 0;
+            font-size: 14px;
+
+        }
+    }
+    &__options{
+        margin-top: 30px;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+        p:first-child{
+            color: $font-light;
+            cursor: pointer;
+        }
+        p:last-child{
+            color: $font-grey;
+            span{
+                color: $font-light;
+                text-decoration: underline;
+                cursor: pointer;
+                padding: 0 5px;
+            }
+        }
+    }
+}

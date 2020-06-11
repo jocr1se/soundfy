@@ -1,0 +1,59 @@
+@import "../../../Scss/index.scss";
+
+.songs-slider{
+    margin: 20px;
+
+    >h2{
+        border-bottom: 1px solid $border-grey-light;
+        padding-bottom: 10px;
+        
+
+    }
+    &__list{
+        .slick-prev{
+            left: -35px;
+        }
+        .slick-next{
+            right: -35px;
+        }
+        &-song{
+            padding: 20px;
+
+            .avatar{
+                height: 130px;
+                width: 100%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                align-items: center;
+
+            }
+            &:hover{
+                cursor: pointer;
+                i{
+                    opacity: 1;
+                    transform: scale(1.2);
+                }
+            }
+            i{
+                width: 100%;
+                opacity: 0;
+                transition: opacity 0.25s ease-in-out;
+                &:before{
+                    font-size: 50px;
+                    color: $font-light;
+                                        
+                }
+            }
+            h4{
+                text-align: left;
+                color : $font-light;
+                margin-top: 10px;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
